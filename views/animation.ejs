@@ -1,0 +1,30 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible", content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="/css/tailwind.css">
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/animation.js"></script>
+    <title>Thinker</title>
+  </head>
+  <style>
+    .video-container {
+      width: 100%;
+      height: auto;
+      position: fixed;
+    }
+    .qr {
+      position: fixed;
+      z-index: 999;
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+  <body style="background-color:black;">
+    <div class="video-container" id="container">
+      <!--<img src="/img/face.jpg" class="qr">-->
+      <video autoplay id="video" src="/videos/idle.mp4" type="video/mp4" loop></video>
+    </div>
+  </body>
+</html>
