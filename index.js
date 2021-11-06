@@ -26,6 +26,6 @@ app.get("/animation", (req, res) => {
   res.render("animation");
 });
 
-app.listen(3000, () => {
+app.listen(80, () => {
   console.log("Going!");
 });
