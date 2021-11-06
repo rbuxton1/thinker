@@ -33,7 +33,8 @@ var users = [
   "bogdrinker",
   "stagnant_water_fan",
   "bonesmoker",
-  "i_know_where_you_live_maybe5050"
+  "i_know_where_you_live_maybe5050",
+  "man2ape"
 ];
 var index = 0;
 var checker;
