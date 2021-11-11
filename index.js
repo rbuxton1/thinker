@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const bodyparser = require('body-parser');
+const { exec } = require("child_process");
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(bodyparser.json());
 
@@ -24,6 +25,12 @@ app.get("/", (req, res) => {
 
 app.get("/animation", (req, res) => {
   res.render("animation");
+});
+
+app.get("/shutdown", (req, res) => {
+  exec("shutdown -h now", (err, stdout, stderr) => {
+    res.send(`err: ${err}<br>stdout: ${stdout}<br>stderr: ${stderr}`);
+  });
 });
 
 app.listen(80, () => {
